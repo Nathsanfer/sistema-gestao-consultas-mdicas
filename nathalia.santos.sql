@@ -63,3 +63,12 @@ CONSTRAINT fk_paciente FOREIGN KEY (id_paciente) REFERENCES pacientes(id_pacient
 CONSTRAINT fk_medico FOREIGN KEY (id_medico) REFERENCES medicos(id_medico)
 );
 
+-- Inserindo dados na tabela de consultas --
+
+INSERT INTO consultas (id_paciente, id_medico, data_consulta) VALUES 
+(1, 6, ‘2024-10-30’),
+(2, 5, ‘2024-10-29’),
+(3, 4, ‘2024-10-28’),
+(4, 3, ‘2024-11-08’),
+(5, 2, ‘2024-11-09’),
+(6, 1, ‘2024-11-10’);
