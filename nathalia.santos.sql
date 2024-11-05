@@ -85,3 +85,12 @@ SELECT p.nome AS nome_paciente, m.nome AS nome_medico, c.data_consulta, m.especi
 JOIN pacientes p ON c.id_paciente = p.id_paciente
 JOIN medicos m ON c.id_medico = m.id_medico
 WHERE data_consulta <= CURRENT_DATE;
+
+
+-- Mostrando pacientes que ainda não fizeram consultas --
+-- Nome do paciente, CPF do paciente e sexo do paciente --
+
+SELECT p.nome, p.cpf, p.sexo 
+FROM pacientes p
+LEFT JOIN consultas c ON p.id_paciente = c.id_paciente
+WHERE c.id_paciente IS NULL;
