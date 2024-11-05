@@ -36,3 +36,15 @@ cpf VARCHAR(11) UNIQUE NOT NULL,
 sexo VARCHAR(20) 
 );
 
+-- Inserindo dados na tabela de pacientes --
+
+INSERT INTO pacientes (nome, cpf, sexo) VALUES 
+(‘Nicole Santos Braga’, ‘36784927492’, ‘Feminino’),
+(‘João Ferrari Jorge’, ‘76932638297’, ‘Masculino’),
+(‘Julio Ferreira Nascimento’, ‘27480463782’, ‘Masculino’),
+(‘Julia Pinheiro’, ‘73896154010’, ‘Feminino’),
+(‘Carlos Alberto Junior’, ‘86749240512’, ‘Masculino’),
+(‘Gilberto Gil Santos’, ‘86748440112’, ‘Masculino’),
+(‘Vinicius Pedro Silva’, ‘86729249012’, ‘Masculino’),
+(‘Pedro Ribeiro Souza’, ’27492745629’, ‘Masculino’);
+
