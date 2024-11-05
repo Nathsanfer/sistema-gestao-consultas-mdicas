@@ -23,5 +23,8 @@ INSERT INTO medicos (nome, especialidade) VALUES
 (‘Marcelo Carboni’, ‘Oncologista’),
 (‘Thiago Rodrigues’, ‘Anestesiologista’);
 
+-- Mostrando os dados da tabela de médicos --
+
+SELECT * FROM medicos;
 
 
