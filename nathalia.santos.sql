@@ -78,3 +78,10 @@ INSERT INTO consultas (id_paciente, id_medico, data_consulta) VALUES
 
 SELECT * FROM consultas;
 
+-- Mostrando pacientes que já fizeram consultas --
+-- Nome do paciente, nome do médico, data da consulta e especialidade do médico --
+
+SELECT p.nome AS nome_paciente, m.nome AS nome_medico, c.data_consulta, m.especialidade FROM consultas c
+JOIN pacientes p ON c.id_paciente = p.id_paciente
+JOIN medicos m ON c.id_medico = m.id_medico
+WHERE data_consulta <= CURRENT_DATE;
