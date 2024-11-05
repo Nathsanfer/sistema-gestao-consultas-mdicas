@@ -72,3 +72,9 @@ INSERT INTO consultas (id_paciente, id_medico, data_consulta) VALUES
 (4, 3, ‘2024-11-08’),
 (5, 2, ‘2024-11-09’),
 (6, 1, ‘2024-11-10’);
+
+
+-- Mostrando os dados da tabela de consultas --
+
+SELECT * FROM consultas;
+
