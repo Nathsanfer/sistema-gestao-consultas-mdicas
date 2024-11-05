@@ -27,4 +27,12 @@ INSERT INTO medicos (nome, especialidade) VALUES
 
 SELECT * FROM medicos;
 
+-- Criando a tabela de pacientes --
+
+CREATE TABLE pacientes (
+id_paciente SERIAL PRIMARY KEY,
+nome VARCHAR(100) NOT NULL,
+cpf VARCHAR(11) UNIQUE NOT NULL,
+sexo VARCHAR(20) 
+);
 
