@@ -48,3 +48,7 @@ INSERT INTO pacientes (nome, cpf, sexo) VALUES
 (‘Vinicius Pedro Silva’, ‘86729249012’, ‘Masculino’),
 (‘Pedro Ribeiro Souza’, ’27492745629’, ‘Masculino’);
 
+-- Mostrando os dados da tabela de pacientes --
+
+SELECT * FROM pacientes;
+
