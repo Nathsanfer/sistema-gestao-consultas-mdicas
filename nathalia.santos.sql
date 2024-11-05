@@ -94,3 +94,12 @@ SELECT p.nome, p.cpf, p.sexo
 FROM pacientes p
 LEFT JOIN consultas c ON p.id_paciente = c.id_paciente
 WHERE c.id_paciente IS NULL;
+
+
+-- Mostrando médicos que ainda não atenderam pacientes --
+-- Nome do médico e especialidade do médico --
+
+SELECT m.nome, m.especialidade
+FROM medicos m
+LEFT JOIN consultas c ON m.id_medico = c.id_medico
+WHERE c.id_medico IS NULL;
